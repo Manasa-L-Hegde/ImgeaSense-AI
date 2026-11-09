@@ -1,0 +1,63 @@
+{
+  "seed": 42,
+  "evaluated_images": 5,
+  "bleu_1": 0.54,
+  "bleu_4": 0.11582921852882692,
+  "examples": [
+    {
+      "image": "2714703706_d21c5cb8df.jpg",
+      "prediction": "A black dog is about to a small dog",
+      "references": [
+        "dogs playing",
+        "A brown dog is biting a white and tan dog on the snout .",
+        "The brown dog has a hold of the other dogs cheek with its teeth .",
+        "Two dogs are nuzzling each other nose to nose .",
+        "Two dogs bite at each other on the carpet ."
+      ]
+    },
+    {
+      "image": "3532194771_07faf20d76.jpg",
+      "prediction": "A young girl in the air is standing on the beach",
+      "references": [
+        "A man is heading out to see with his surfboard in hand .",
+        "A man with a white surfboard is walking into the water .",
+        "A person walks into the water carrying a white surfboard .",
+        "A surfer walking into the ocean",
+        "Surfer with board marches out to sea on gray day ."
+      ]
+    },
+    {
+      "image": "2356574282_5078f08b58.jpg",
+      "prediction": "A young boy dressed in front of a yellow television",
+      "references": [
+        "A Arabian dressed lady leans backwards holding a skinny crooked sword .",
+        "A costumed woman with a sword does a backbend .",
+        "A woman bending over backwards .",
+        "A woman in a belly dancing outfit bending over backwards .",
+        "A woman in a dance costume is bending over backward and holding a sword ."
+      ]
+    },
+    {
+      "image": "3526150930_580908dab6.jpg",
+      "prediction": "A young girl in a pink dress is about her",
+      "references": [
+        "A woman and a young girl pose and smile for a photo .",
+        "A woman and a young girl smiling for the camera , in front of some flowers .",
+        "A woman and girl pose together in a garden .",
+        "A woman poses with a small girl on her lap in front of a flower bush .",
+        "A woman with brown hair is sitting with a little girl with short brown hair outside next to some red flowers ."
+      ]
+    },
+    {
+      "image": "2448270671_5e0e391a80.jpg",
+      "prediction": "A brown dog is about to catch a yellow ball",
+      "references": [
+        "A brown dog is leaping over a fallen tree in the woods .",
+        "A brown dog with tongue sticking out jumping over a log .",
+        "A dog is jumping over a log with ears flying and tongue out .",
+        "A dog leaps over a log in the woods .",
+        "The dog with big ears is leaping over a fallen tree ."
+      ]
+    }
+  ]
+}

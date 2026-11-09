@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+data/
+.keras/
+.mplconfig/
+*.h5
+*.keras
+*.pkl
+*.npz
+.streamlit/secrets.toml
