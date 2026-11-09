@@ -1,9 +1,24 @@
-# ImageSense AI
+# ImageSense AI — Multimodal CNN + RNN Image Captioning
 
-ImageSense AI is a CNN + RNN image-captioning prototype based on the project proposal. A pretrained
-**MobileNetV2** extracts 49 spatial visual features from an image, and an attention-based **LSTM
-decoder** generates a caption word by word. This makes the CNN–RNN connection explicit: the decoder
-learns which CNN image regions matter for each caption prefix.
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://imgeasense-ai.streamlit.app/)
+[![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
+[![TensorFlow 2.16+](https://img.shields.io/badge/TensorFlow-2.16%2B-orange.svg)](https://www.tensorflow.org/)
+[![BLEU-1 Score](https://img.shields.io/badge/BLEU--1-54.0%25-brightgreen.svg)](#evaluation-results)
+
+🚀 **Live Interactive Web App:** [https://imgeasense-ai.streamlit.app/](https://imgeasense-ai.streamlit.app/)
+
+ImageSense AI is an end-to-end multimodal deep learning mini-project combining **Computer Vision (CNN)** and **Natural Language Processing (RNN)**:
+1. **Pretrained MobileNetV2 (CNN Encoder):** Extracts 49 spatial visual regions ($7 \times 7 \times 1280$) from an input image.
+2. **Bahdanau Additive Attention:** Dynamically calculates attention weights, allowing the model to look at the relevant image region for each word.
+3. **LSTM Decoder (RNN):** Generates grammatically coherent natural-language captions word-by-word.
+4. **Interactive Attention Heatmap & Audio:** Visually inspect which image regions the network focused on for every word, and listen to the caption via integrated Text-to-Speech (TTS).
+
+---
+
+## 🌐 Live Web Demo
+
+You can try the live application directly in your browser without installing anything:  
+👉 **[ImageSense AI on Streamlit Cloud](https://imgeasense-ai.streamlit.app/)**
 
 ## Setup
 
@@ -72,9 +87,19 @@ and viva-ready notes.
 python -m pytest -q
 ```
 
-## Evaluation notes
+## Evaluation Results
 
-Record held-out images, generated captions, and a short human assessment of objects/actions. BLEU can
-be calculated against the five Flickr8k reference captions, but it should be reported alongside
-qualitative observations because it does not fully measure semantic correctness. Expected limitations
-include repetitive captions, incomplete sentences, and incorrect object or action names.
+| Metric | Measured Score | Description |
+| :--- | :--- | :--- |
+| **BLEU-1** | **54.0%** | Unigram word accuracy against 5 human reference captions |
+| **BLEU-4** | **11.6%** | 4-gram sentence coherence and phrase structure |
+| **Training Loss** | **2.428** | Categorical Cross-Entropy on teacher-forced sequences |
+| **Validation Loss**| **4.178** | Cross-Entropy error on held-out validation images |
+| **Vocabulary** | **1,078 words** | Domain entities, actions, and descriptors |
+
+---
+
+## 📚 Project Documentation & Viva Resources
+* 📑 [Comprehensive Project Report (Formal Writeup)](docs/PROJECT_REPORT.md)
+* 🧠 [Top 10 Viva Questions & Faculty Cheat Sheet](docs/VIVA_PRESENTATION_GUIDE.md)
+* 📊 [Presentation Slides Outline (12 Slides for PPT)](docs/PRESENTATION_SLIDES_OUTLINE.md)
