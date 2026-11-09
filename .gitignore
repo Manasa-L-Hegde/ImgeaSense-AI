@@ -10,4 +10,6 @@ data/
 *.keras
 *.pkl
 *.npz
+!artifacts/caption_decoder.keras
+!artifacts/training_history.npz
 .streamlit/secrets.toml
